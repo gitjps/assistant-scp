@@ -1,18 +1,10 @@
-<h1 align="center" style="border-bottom: none;">🚀 Watson Assistant (formerly Conversation) Sample Application</h1>
-<h3 align="center">This Node.js app demonstrates the Watson Assistant service in a simple interface engaging in a series of simple simulated banking tasks.</h3>
-<p align="center">
-  <a href="http://travis-ci.org/watson-developer-cloud/assistant-simple">
-    <img alt="Travis" src="https://travis-ci.org/watson-developer-cloud/assistant-simple.svg?branch=master">
-  </a>
-  <a href="#badge">
-    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
-  </a>
-</p>
-</p>
+<h1 align="center" style="border-bottom: none;"> Watson Assistant Chatbot for SAP Cloud Platform</h1>
+<h3 align="center">This Node.js app demonstrates how easily a chatbot can be built that is running on the SAP Cloud Platform and that is leveraging the Watson Assistant service on the IBM Cloud.</h3>
+
+The [assistant-simple](https://github.com/watson-developer-cloud/assistant-simple) was modified so the Node.js app is deployed on the SCP. There's also a [demo][demo_url] of the original app - apps on SCP trial accounts are stopped after a certain time.
 
 ![Demo](readme_images/demo.gif)
 
-You can view a [demo][demo_url] of this app.
 
 Please note this app uses the [Watson Assistant V2 API](https://cloud.ibm.com/apidocs/assistant-v2#introduction). To access a version of the V1 app, you can go to [v1.4.1](https://github.com/watson-developer-cloud/assistant-simple/releases/tag/v1.4.1).
 
@@ -20,6 +12,8 @@ If you need more information about the V1 API, you can go to the [Watson Assista
 
 
 ## Prerequisites
+
+It is assumed that you have an account on the SAP Cloud Platform and downloaded the [Cloud Foundry Command Line Interface](https://developers.sap.com/tutorials/cp-cf-download-cli.html).
 
 1. Sign up for an [IBM Cloud account](https://cloud.ibm.com/registration/).
 1. Download the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli/index.html#overview).
