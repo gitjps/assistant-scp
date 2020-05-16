@@ -126,10 +126,6 @@ For example: https://my-app-name.mybluemix.net
 This sample code is licensed under Apache 2.0.  
 Full license text is available in [LICENSE](LICENSE).
 
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md).
-
 ## Open Source @ IBM
 
 Find more open source projects on the
