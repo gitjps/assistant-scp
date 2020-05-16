@@ -42,11 +42,10 @@ if (process.env.ASSISTANT_IAM_APIKEY) {
   });
 }
 
-var assistant = new AssistantV2({
-  version: '2019-02-28',
+const assistant = new AssistantV2({
+  version: '2020-04-01',
   authenticator: authenticator,
   url: process.env.ASSISTANT_URL,
-  disableSslVerification: process.env.DISABLE_SSL_VERIFICATION === 'true' ? true : false
 });
 
 // Endpoint to be call from the client side
@@ -69,16 +68,16 @@ app.post('/api/message', function(req, res) {
   if (req.body.input) {
     textIn = req.body.input.text;
   }
-
+  
   var payload = {
-    assistantId: assistantId,
+    assistantId: process.env.ASSISTANT_ID || '{assistant_id}',
     sessionId: req.body.session_id,
     input: {
       message_type: 'text',
       text: textIn,
     },
   };
-
+  
   // Send the input to the assistant service
   assistant.message(payload, function(err, data) {
     if (err) {
@@ -93,7 +92,7 @@ app.post('/api/message', function(req, res) {
 app.get('/api/session', function(req, res) {
   assistant.createSession(
     {
-      assistantId: process.env.ASSISTANT_ID || '{assistant_id}',
+        assistantId: process.env.ASSISTANT_ID || '{assistant_id}',   
     },
     function(error, response) {
       if (error) {
