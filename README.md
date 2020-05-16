@@ -126,7 +126,7 @@ It is assumed that you have an account on the SAP Cloud Platform and downloaded 
     ```
 
 1. View the application online at the app URL.  
-For example: https://my-app-name.api.cf.eu10.hana.ondemand.com
+For example: https://my-app-name.cfapps.eu10.hana.ondemand.com
 
 
 ## License
