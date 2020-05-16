@@ -3,8 +3,16 @@
 
 The [assistant-simple](https://github.com/watson-developer-cloud/assistant-simple) was modified so the Node.js app is deployed on the SCP. There's also a [demo][demo_url] of the original app - apps on SCP trial accounts are stopped after a certain time.
 
+This demo shows how the assistant works in general (animation was created on IBM Cloud)
 ![Demo](readme_images/demo.gif)
 
+As both, IBM Cloud and SAP Cloud platform, have Cloud Foundry runtimes it was possible to deploy the assistant on the SAP Cloud Platform.
+
+![Assistant on SAP Cloud Platform](readme_images/bank-assistant.jpg)
+
+The solution demonstrates how simple it is to deploy Cloud Foundry applications on different platforms and how to consume services from other platforms via a REST API.
+
+![architecture](readme_images/architecture.jpg)
 
 Please note this app uses the [Watson Assistant V2 API](https://cloud.ibm.com/apidocs/assistant-v2#introduction). To access a version of the V1 app, you can go to [v1.4.1](https://github.com/watson-developer-cloud/assistant-simple/releases/tag/v1.4.1).
 
@@ -114,7 +122,7 @@ It is assumed that you have an account on the SAP Cloud Platform and downloaded 
 1. Deploy the application
 
     ```
-    cf app push
+    cf push
     ```
 
 1. View the application online at the app URL.  
