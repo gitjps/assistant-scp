@@ -102,26 +102,19 @@ It is assumed that you have an account on the SAP Cloud Platform and downloaded 
 
 1. View the application in a browser at `localhost:3000`
 
-## Deploying to IBM Cloud as a Cloud Foundry Application
+## Deploying to the SAP Cloud Platform
 
-1. Login to IBM Cloud with the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli/index.html#overview)
-
+1. Select the correct [region](https://developers.sap.com/tutorials/cp-cf-download-cli.html) and log in
     ```
-    ibmcloud login
+    cf api https://api.cf.eu10.hana.ondemand.com
+    cf login
     ```
-
-1. Target a Cloud Foundry organization and space.
-
-    ```
-    ibmcloud target --cf
-    ```
-
 1. Edit the *manifest.yml* file. Change the **name** field to something unique.  
   For example, `- name: my-app-name`.
 1. Deploy the application
 
     ```
-    ibmcloud app push
+    cf app push
     ```
 
 1. View the application online at the app URL.  
@@ -144,9 +137,9 @@ Find more open source projects on the
 
 
 [demo_url]: https://assistant-simple.ng.bluemix.net/
-[doc_intents]: https://cloud.ibm.com/docs/services/conversation/intents-entities.html#planning-your-entities
-[docs]: https://cloud.ibm.com/docs/services/assistant/index.html#index
-[docs_landing]: (https://cloud.ibm.com/docs/services/assistant/index.html#index)
+[Watson Assistant doc_intents]: https://cloud.ibm.com/docs/services/conversation/intents-entities.html#planning-your-entities
+[Watson Assistant docs]: https://cloud.ibm.com/docs/services/assistant/index.html#index
+[Watson Assistant docs_landing]: (https://cloud.ibm.com/docs/services/assistant/index.html#index)
 [node_link]: (http://nodejs.org/)
 [npm_link]: (https://www.npmjs.com/)
 [sign_up]: https://cloud.ibm.com/registration
