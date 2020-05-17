@@ -1,7 +1,7 @@
 <h1 align="center" style="border-bottom: none;"> Watson Assistant Chatbot for SAP Cloud Platform</h1>
 <h3 align="center">This Node.js app demonstrates how easily a chatbot can be built that is running on the SAP Cloud Platform and that is leveraging the Watson Assistant service on the IBM Cloud.</h3>
 
-The [assistant-simple](https://github.com/watson-developer-cloud/assistant-simple) was modified so the Node.js app is deployed on the SCP. There's also a [demo][demo_url] of the original app - apps on SCP trial accounts are stopped after a certain time. Please note that both animations in this repo are still from the orginal IBM Cloud repo. This one shows the dialog.
+The [assistant-simple](https://github.com/watson-developer-cloud/assistant-simple) was slightly modified so the Node.js app is deployed on the SCP. There's also a [demo][demo_url] of the original app - apps on SCP trial accounts are stopped after a certain time. Please note that both animations in this repo are still from the orginal IBM Cloud repo. This one shows the dialog.
 
 ![Demo](readme_images/demo.gif)
 
